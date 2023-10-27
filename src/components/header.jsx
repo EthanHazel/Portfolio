@@ -31,9 +31,9 @@ export default function Header() {
                 <div className='headerLeft'>
                     <Icon logo='logo' size={36} clickable='scroll' />
                     <div className='headerLinks'>
-                        <a href='#' className='current'>Home</a>
+                        <a href='./index.html' className='current'>Home</a>
                         <a href='#'>Resume</a>
-                        <a href='#'>Source</a>
+                        <a href='https://github.com/EthanHazel/Portfolio'>Source</a>
                     </div>
                 </div>
                 <div className='headerRight'>
