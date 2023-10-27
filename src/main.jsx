@@ -20,11 +20,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         </div>
       </div>
       <div className='section right'>
-<<<<<<< HEAD
         <img src={('./public/assets/face_one.png')} />
-=======
-        <img src='./assets/face_one.png' />
->>>>>>> parent of e2b2ba7 (Update main.jsx)
       </div>
     </Container>
     <Container size='small'>
