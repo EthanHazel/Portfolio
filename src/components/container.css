@@ -1,0 +1,75 @@
+.bigContainer {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.smallContainer {
+    background-image: url(../assets/gradient.png);
+    background-repeat: repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 640px;
+    padding: 0;
+    color: white;
+}
+
+.smallContainer ::selection {
+    color: var(--primary);
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    width: 1620px;
+    height: calc(100% - 236px);
+    justify-content: space-between;
+    align-items: center;
+    align-content: stretch;
+    row-gap: 48px;
+}
+
+.section {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 48px;
+}
+
+/*
+.container:hover {
+    outline: 1px solid rgba(0, 0, 255, 1);
+}
+
+.section:hover {
+    outline: 1px solid rgba(0, 255, 0, 1);
+}
+*/
+
+.section.left {
+    align-items: flex-start;
+    width: calc(55% - 24px);
+}
+
+.section.right {
+    align-items: flex-end;
+    width: calc(45% - 24px);
+}
+
+.section.center {
+    align-items: center;
+    width: 25%;
+}
+
+.section img {
+    width: 100%;
+    height: auto;
+}

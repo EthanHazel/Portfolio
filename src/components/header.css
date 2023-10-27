@@ -1,0 +1,100 @@
+/* Common styles for .color and .header */
+.color,
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+}
+
+.color {
+    background: linear-gradient(240deg, rgba(241, 148, 127, 1) 0%, rgba(239, 95, 81, 1) 50%, rgba(241, 82, 95, 1) 100%);
+    background-size: cover;
+    height: 6px;
+    width: 100%;
+    box-shadow: 0px 3px 36px 0px hwb(7 0% 42%);
+    z-index: 2;
+}
+
+.header {
+    backdrop-filter: blur(24px);
+    background-image: url(../assets/header_noise.png);
+    justify-content: space-between;
+    align-items: center;
+    top: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1620px;
+    height: 64px;
+    align-items: center;
+    z-index: 1;
+    border-radius: 24px;
+    transition: box-shadow 0.25s;
+    padding: 8px 16px;
+    box-shadow: 0px 10px 36px 0px #9229001a, 0px 0px 0px 1px hsla(12, 100%, 50%, 0.059);
+}
+
+.header.no-box-shadow {
+    box-shadow: none;
+}
+
+/* Styles for .headerLeft and .headerRight */
+.headerLeft,
+.headerRight {
+    display: flex;
+    align-items: center;
+}
+
+.headerLeft {
+    column-gap: 32px;
+}
+
+.headerRight {
+    column-gap: 12px;
+}
+
+.headerRight .icon img {
+    opacity: 0.5;
+}
+
+/* Styles for .headerLinks */
+.headerLinks {
+    display: flex;
+    column-gap: 16px;
+}
+
+.headerLinks a {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.8);
+    text-decoration: none;
+    transition: background-color 0.025s, opacity 0.025s;
+    padding: 6px 24px;
+    border-radius: 12px;
+}
+
+.headerLinks a:hover {
+    background-color: rgba(0, 0, 0, 0.06);
+}
+
+.headerLinks a:active {
+    background-color: rgba(0, 0, 0, 0.18);
+}
+
+.headerLinks a.current {
+    background-color: var(--primary);
+    color: white;
+}
+
+.headerLinks a.current:hover {
+    opacity: 0.75;
+}
+
+.headerLinks a.current:active {
+    opacity: 0.5;
+}
+
+.logo img {
+    opacity: 0.5;
+}

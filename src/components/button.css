@@ -1,0 +1,38 @@
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 24px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    height: 64px;
+    border-radius: 12px;
+    font-family: 'Syne', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.025s;
+}
+
+.button.red {
+    background-color: var(--primary);
+}
+
+.button.gray {
+    background-color: #7f7f7f;
+}
+
+.button:hover {
+    opacity: 0.75;
+}
+
+.button:active {
+    opacity: 0.5;
+}
