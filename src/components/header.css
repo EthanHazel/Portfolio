@@ -18,7 +18,7 @@
 
 .header {
     backdrop-filter: blur(24px);
-    background-image: url(../assets/header_noise.png);
+    background-image: url(.../public/assets/header_noise.png);
     justify-content: space-between;
     align-items: center;
     top: 24px;

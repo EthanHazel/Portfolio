@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Container from './components/container.jsx'
 import Header from './components/header.jsx'
+import Icon from './components/icon.jsx'
 import Button from './components/button.jsx'
 
 import './master.css'
@@ -19,7 +20,11 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         </div>
       </div>
       <div className='section right'>
-        <img src={require('./src/assets/face_one.png')} />
+<<<<<<< HEAD
+        <img src={('./public/assets/face_one.png')} />
+=======
+        <img src='./assets/face_one.png' />
+>>>>>>> parent of e2b2ba7 (Update main.jsx)
       </div>
     </Container>
     <Container size='small'>
