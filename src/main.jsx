@@ -2,7 +2,6 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Container from './components/container.jsx'
 import Header from './components/header.jsx'
-import Icon from './components/icon.jsx'
 import Button from './components/button.jsx'
 
 import './master.css'
@@ -20,7 +19,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         </div>
       </div>
       <div className='section right'>
-        <img src='./assets/face_one.png' />
+        <img src={require('./src/assets/face_one.png')} />
       </div>
     </Container>
     <Container size='small'>
