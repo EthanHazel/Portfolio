@@ -2,14 +2,15 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Container from './components/container.jsx'
 import Header from './components/header.jsx'
-import Icon from './components/icon.jsx'
 import Button from './components/button.jsx'
+import Glow from './components/glow.jsx'
 
 import './master.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Header />
+    <Glow />
     <Container size='big' headerSpace={true}>
       <div className='section left'>
         <h2>Hey I'm <h1>Ethan.</h1> What's up?</h2>
