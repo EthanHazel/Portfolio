@@ -8,7 +8,7 @@
     background-color: white;
     background-repeat: repeat;
     mix-blend-mode: overlay;
-    opacity: 25%;
+    opacity: 50%;
     pointer-events: none;
     mask-image: url(./assets/overlay_mask.png);
     -webkit-mask-image: url(./assets/overlay_mask.png);
