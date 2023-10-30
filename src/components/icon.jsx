@@ -1,5 +1,5 @@
-import './icon.css';
 import React, { useEffect, useState } from 'react';
+import './icon.css';
 
 import logoIcon from '../assets/icons/logo.svg';
 import githubIcon from '../assets/icons/github.svg';
@@ -17,6 +17,10 @@ const icons = {
     linkedin: linkedinIcon,
 };
 
+const capitalizeFirstLetter = (string) => {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+};
+
 const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 };
@@ -24,8 +28,9 @@ const scrollToTop = () => {
 export default function Icon({ size = 1.5, logo = 'logo', clickable = null }) {
     const source = icons[logo] || logoIcon;
     const classLogo = logo === 'logo' ? 'logo' : 'icon';
-
     const [imgSize, setImgSize] = useState((size * document.documentElement.clientHeight) / 100);
+
+    const classString = `${classLogo} ${clickable ? 'clickable' : ''}`;
 
     const handleClick = () => {
         if (clickable === 'scroll') {
@@ -35,11 +40,11 @@ export default function Icon({ size = 1.5, logo = 'logo', clickable = null }) {
         }
     };
 
-    useEffect(() => {
-        const updateImgSize = () => {
-            setImgSize((size * document.documentElement.clientHeight) / 100);
-        };
+    const updateImgSize = () => {
+        setImgSize((size * document.documentElement.clientHeight) / 100);
+    };
 
+    useEffect(() => {
         window.addEventListener('resize', updateImgSize);
 
         return () => {
@@ -49,11 +54,11 @@ export default function Icon({ size = 1.5, logo = 'logo', clickable = null }) {
 
     return (
         <a
-            className={`clickable ${classLogo}`}
+            className={classString}
             onClick={handleClick}
             href={clickable === 'scroll' ? null : clickable}
-            target={clickable === 'scroll' ? null : '_blank'}
-            title={logo.charAt(0).toUpperCase() + logo.slice(1)}
+            target={clickable ? '_blank' : null}
+            title={capitalizeFirstLetter(logo)}
         >
             <img src={source} width={imgSize} height={imgSize} alt={logo} />
         </a>
