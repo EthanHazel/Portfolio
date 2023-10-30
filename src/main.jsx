@@ -53,7 +53,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Container size='big'>
       <div className='section left'>
         <h2>Hey, let's get in <h1>touch!</h1></h2>
-        <p>I'm a Graphic Designer and a Front End Web Designer with upwards of 5 years of experience and a passion for anything computer related, if you need a logo made, a website created, or a brand designed, I'm your guy.</p>
+        <p>For inquiries or collaborations, you can contact me via LinkedIn or email. Whether it's creating logos, websites, or brand identities, I'm here to bring your vision to life.</p>
         <div className='buttonContainer'>
           <Button color='red' href='https://www.linkedin.com/in/ethan-hazel/overlay/contact-info/'>LinkedIn</Button>
           <Button color='gray' href='mailto:ethanyvonhazel@gmail.com'>Email</Button>
