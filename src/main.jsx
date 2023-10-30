@@ -11,7 +11,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Header />
     <Glow />
-    <Container size='big' headerSpace={true}>
+    <Container size='big'>
       <div className='section left'>
         <h2>Hey I'm <h1>Ethan.</h1> What's up?</h2>
         <p>I'm a Graphic Designer and a Front End Web Designer with upwards of 5 years of experience and a passion for anything computer related, if you need a logo made, a website created, or a brand designed, I'm your guy.</p>
@@ -50,6 +50,18 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         </div>
       </div>
     </Container>
-    <Container size='big'><h1>yo</h1></Container>
+    <Container size='big'>
+      <div className='section left'>
+        <h2>Hey, let's get in <h1>touch!</h1></h2>
+        <p>I'm a Graphic Designer and a Front End Web Designer with upwards of 5 years of experience and a passion for anything computer related, if you need a logo made, a website created, or a brand designed, I'm your guy.</p>
+        <div className='buttonContainer'>
+          <Button color='red' href='https://www.linkedin.com/in/ethan-hazel/overlay/contact-info/'>LinkedIn</Button>
+          <Button color='gray' href='mailto:ethanyvonhazel@gmail.com'>Email</Button>
+        </div>
+      </div>
+      <div className='section right'>
+        <img src={('./assets/face_two.png')} />
+      </div>
+    </Container>
   </React.StrictMode>
 )

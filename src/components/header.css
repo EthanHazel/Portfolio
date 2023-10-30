@@ -18,7 +18,7 @@
 
 .header {
     backdrop-filter: blur(24px);
-    background-image: url(./assets/header_noise.png);
+    background-color: hsla(0, 0%, 96%, 0.25);
     justify-content: space-between;
     align-items: center;
     top: 24px;
@@ -31,7 +31,7 @@
     border-radius: 24px;
     transition: box-shadow 0.25s;
     padding: 8px 16px;
-    box-shadow: 0px 10px 36px 0px #9229001a, 0px 0px 0px 1px hsla(12, 100%, 50%, 0.059);
+    box-shadow: 0px 10px 36px 0px hsla(0, 0%, 53%, 0.102), 0px 0px 0px 1px hsla(0, 0%, 100%, 0.059);
 }
 
 .header.no-box-shadow {
