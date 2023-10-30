@@ -20,9 +20,9 @@ export default function Glow() {
     }, []);
 
     const noiseStyle = {
-        WebkitMaskPosition: `${mousePosition.x - 540}px ${mousePosition.y - 540}px`,
+        WebkitMaskPosition: `calc(${mousePosition.x}px - 42.5vh) calc(${mousePosition.y}px - 42.5vh)`,
         MaskPosition: `${mousePosition.x - 540}px ${mousePosition.y - 540}px`,
     };
 
-    return <div className="noise" style={noiseStyle} />;
+    return <div className="glow" style={noiseStyle} />;
 }

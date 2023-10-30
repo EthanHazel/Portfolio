@@ -34,7 +34,7 @@ export default function Header() {
             <div className='color' />
             <div className={headerClasses + ' header'}>
                 <div className='headerLeft'>
-                    <Icon logo='logo' size={36} clickable='scroll' />
+                    <Icon logo='logo' size={2.5} clickable='scroll' />
                     <div className='headerLinks'>
                         <a href='./index.html' className='current'>Home</a>
                         <a href='#'>Resume</a>
@@ -42,10 +42,10 @@ export default function Header() {
                     </div>
                 </div>
                 <div className='headerRight'>
-                    <Icon logo='dribbble' size={20} clickable='https://dribbble.com/ethanhazel' />
-                    <Icon logo='twitter' size={20} clickable='https://x.com/EthanHazelGD' />
-                    <Icon logo='github' size={20} clickable='https://github.com/EthanHazel' />
-                    <Icon logo='linkedin' size={20} clickable='https://www.linkedin.com/in/ethan-hazel/' />
+                    <Icon logo='dribbble' size={1.5} clickable='https://dribbble.com/ethanhazel' />
+                    <Icon logo='twitter' size={1.5} clickable='https://x.com/EthanHazelGD' />
+                    <Icon logo='github' size={1.5} clickable='https://github.com/EthanHazel' />
+                    <Icon logo='linkedin' size={1.5} clickable='https://www.linkedin.com/in/ethan-hazel/' />
                 </div>
             </div>
         </>

@@ -1,5 +1,5 @@
 import './icon.css';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import logoIcon from '../assets/icons/logo.svg';
 import githubIcon from '../assets/icons/github.svg';
@@ -21,9 +21,11 @@ const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 };
 
-export default function Icon({ size = 48, logo = 'logo', clickable = null }) {
+export default function Icon({ size = 1.5, logo = 'logo', clickable = null }) {
     const source = icons[logo] || logoIcon;
     const classLogo = logo === 'logo' ? 'logo' : 'icon';
+
+    const [imgSize, setImgSize] = useState((size * document.documentElement.clientHeight) / 100);
 
     const handleClick = () => {
         if (clickable === 'scroll') {
@@ -33,7 +35,17 @@ export default function Icon({ size = 48, logo = 'logo', clickable = null }) {
         }
     };
 
-    const imgSize = `${size}px`;
+    useEffect(() => {
+        const updateImgSize = () => {
+            setImgSize((size * document.documentElement.clientHeight) / 100);
+        };
+
+        window.addEventListener('resize', updateImgSize);
+
+        return () => {
+            window.removeEventListener('resize', updateImgSize);
+        };
+    }, [size]);
 
     return (
         <a

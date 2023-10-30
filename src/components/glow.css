@@ -1,4 +1,4 @@
-.noise {
+.glow {
     position: fixed;
     top: 0;
     left: 0;
@@ -12,8 +12,8 @@
     pointer-events: none;
     mask-image: url(./assets/overlay_mask.png);
     -webkit-mask-image: url(./assets/overlay_mask.png);
-    -webkit-mask-size: 1080px 1080px;
-    mask-size: 1080px 1080px;
+    -webkit-mask-size: 85vh 85vh;
+    mask-size: 85vh 85vh;
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
 }

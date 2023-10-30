@@ -30,7 +30,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <h1>I'm</h1>
           <h2>Flexable</h2>
           <hr />
-          <p>I won't deadlock you into just one style, I can create a wide variety of designs to fit your exact needs.</p>
+          <p>I won't deadlock you into just one style, I can create a variety of designs to fit your needs.</p>
         </div>
       </div>
       <div className='section center'>

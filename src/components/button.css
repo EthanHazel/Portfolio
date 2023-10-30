@@ -2,18 +2,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 24px;
+    column-gap: 1.8vh;
 }
 
 .button {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 240px;
-    height: 64px;
-    border-radius: 12px;
+    width: 19vh;
+    height: 5vh;
+    border-radius: 1vh;
     font-family: 'Syne', sans-serif;
-    font-size: 24px;
+    font-size: 1.8vh;
     font-weight: 500;
     text-decoration: none;
     color: white;
