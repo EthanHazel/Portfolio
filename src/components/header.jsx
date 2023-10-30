@@ -8,7 +8,6 @@ export default function Header() {
 
     useEffect(() => {
         const handleScroll = () => {
-            console.log(window.innerHeight + Math.round(window.scrollY), document.body.offsetHeight);
             if (window.scrollY > 0) {
                 if ((window.innerHeight + Math.round(window.scrollY)) >= document.body.offsetHeight) {
                     setShowBoxShadow(false);
