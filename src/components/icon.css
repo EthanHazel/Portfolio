@@ -1,3 +1,7 @@
+.logo.clickable img {
+    -webkit-user-drag: none;
+}
+
 .clickable {
     display: flex;
     justify-content: center;

@@ -1,9 +1,12 @@
 .faceContainer {
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: flex-end;
     flex-direction: column;
-    transform: translateY(45%);
+    user-select: none;
+    -webkit-user-select: none;
+    transform: translateY(25%);
     /* this is a ducktape fix */
 }
 
@@ -12,27 +15,45 @@
     border-radius: 5vh;
     border-radius: 5vh;
     z-index: 2;
+    -webkit-user-drag: none;
 }
 
 .faceImage {
-    transform: translateY(-100%);
+    position: absolute;
+    bottom: 5vh;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     z-index: 3;
     filter: drop-shadow(0 2vh 2vh var(--background));
 }
 
 .faceBackground {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     -webkit-mask-image: linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1));
     mask-image: linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1));
-    transform: translateY(-200%);
     border-radius: 5vh;
     z-index: 2;
     opacity: 25%;
+    -webkit-user-drag: none;
 }
 
 .faceBackgroundBlur {
-    transform: translateY(calc(-300% + 4vh));
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 5vh;
     z-index: 0;
     filter: blur(5vh);
     opacity: 0.025;
+    -webkit-user-drag: none;
 }
