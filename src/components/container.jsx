@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import './Container.css';
+import './container.css';
 
 export default function Container(props) {
   const containerClass = `${props.size}Container`;
