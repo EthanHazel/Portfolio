@@ -3,14 +3,13 @@ import ReactDOM from 'react-dom/client'
 import Container from './components/container.jsx'
 import Header from './components/header.jsx'
 import Button from './components/button.jsx'
-import Glow from './components/glow.jsx'
 
 import './main.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <div className='noise' />
     <Header />
-    <Glow />
     <Container size='big'>
       <div className='section left'>
         <h2>Hey I'm <h1>Ethan.</h1> What's up?</h2>
@@ -28,7 +27,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <div className='section center'>
         <div>
           <h1>I'm</h1>
-          <h2>Flexable</h2>
+          <h2>Flexible</h2>
           <hr />
           <p>I won't deadlock you into just one style, I can create a variety of designs to fit your needs.</p>
         </div>
