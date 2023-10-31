@@ -17,7 +17,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <p>I'm a Graphic Designer and a Front End Web Designer with upwards of 5 years of experience and a passion for anything computer related, if you need a logo made, a website created, or a brand designed, I'm your guy.</p>
         <div className='buttonContainer'>
           <Button color='red' href='https://www.linkedin.com/in/ethan-hazel/' label='Hire Me' />
-          <Button color='gray' href='https://www.google.com' label='View Resume' />
+          <Button color='gray' href='https://www.example.com' label='View Resume' />
         </div>
       </div>
       <div className='section right'>
