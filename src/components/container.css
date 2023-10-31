@@ -60,7 +60,7 @@
 
 .section.right {
     align-items: flex-end;
-    width: calc(45% - 4vh);
+    width: calc(45% - 3vh);
 }
 
 .section.center {
