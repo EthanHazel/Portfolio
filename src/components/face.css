@@ -1,0 +1,38 @@
+.faceContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    transform: translateY(45%);
+    /* this is a ducktape fix */
+}
+
+.faceOverlay {
+    filter: blur(2vh);
+    border-radius: 5vh;
+    border-radius: 5vh;
+    z-index: 2;
+}
+
+.faceImage {
+    transform: translateY(-100%);
+    z-index: 3;
+    filter: drop-shadow(0 2vh 2vh var(--background));
+}
+
+.faceBackground {
+    -webkit-mask-image: linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1));
+    mask-image: linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1));
+    transform: translateY(-200%);
+    border-radius: 5vh;
+    z-index: 2;
+    opacity: 25%;
+}
+
+.faceBackgroundBlur {
+    transform: translateY(calc(-300% + 4vh));
+    border-radius: 5vh;
+    z-index: 0;
+    filter: blur(5vh);
+    opacity: 0.025;
+}
