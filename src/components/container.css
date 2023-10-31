@@ -19,9 +19,9 @@
 }
 
 .smallContainer .container {
-    background: linear-gradient(145deg, #171717, #1c1c1c);
-    box-shadow: 20px 20px 60px #161616,
-        -20px -20px 60px #1e1e1e;
+    background: linear-gradient(145deg, #101010, #131313);
+    box-shadow: 1.5vh 1.5vh 5vh #0f0f0f,
+        -1.5vh -1.5vh 5vh #151515;
 }
 
 .container {
@@ -34,6 +34,15 @@
     row-gap: 3.7vh;
     padding: 2vh;
     border-radius: 4vh;
+
+    opacity: 0;
+    transform: translateY(-20px) scaleY(1.01);
+    transition: opacity 1s ease, transform 0.5s ease;
+}
+
+.fade-in {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .section {
