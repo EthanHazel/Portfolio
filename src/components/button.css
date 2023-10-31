@@ -18,7 +18,7 @@
     text-decoration: none;
     color: var(--background);
     cursor: pointer;
-    transition: 0.25s;
+    transition: 0.25s ease-in-out;
 }
 
 .button.red {

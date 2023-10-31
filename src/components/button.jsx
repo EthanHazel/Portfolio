@@ -7,3 +7,5 @@ export default function Button(props) {
         </a>
     )
 }
+
+// Such a needed component, good job Ethan
