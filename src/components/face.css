@@ -26,7 +26,6 @@
     height: 100%;
     object-fit: cover;
     z-index: 3;
-    filter: drop-shadow(0 2vh 2vh var(--background));
 }
 
 .faceBackground {
