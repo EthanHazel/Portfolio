@@ -7,7 +7,6 @@
     user-select: none;
     -webkit-user-select: none;
     transform: translateY(25%);
-    /* this is a ducktape fix */
 }
 
 .faceOverlay {
@@ -26,6 +25,7 @@
     height: 100%;
     object-fit: cover;
     z-index: 3;
+    animation: fadeIn 2s;
 }
 
 .faceBackground {
@@ -55,4 +55,15 @@
     filter: blur(5vh);
     opacity: 0.025;
     -webkit-user-drag: none;
+}
+
+@keyframes fadeIn {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100%;
+    }
 }
