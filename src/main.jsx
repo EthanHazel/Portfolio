@@ -27,26 +27,26 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Container size='small'>
       <div className='section center'>
         <div>
-          <h1>I'm</h1>
-          <h2>Flexible</h2>
+          <h2>Web</h2>
+          <h1>Design</h1>
           <hr />
-          <p>I won't deadlock you into just one style, I can create a variety of designs to fit your needs.</p>
+          <p>Whether it's sleek or classic, I can craft a website that fits your brand's online presence.</p>
         </div>
       </div>
       <div className='section center'>
         <div>
-          <h1>I'm</h1>
-          <h2>Stylistic</h2>
+          <h2>Logo</h2>
+          <h1>Design</h1>
           <hr />
-          <p>From modern and minimalistic, to retro and funky, I can create a design that fits your brand.</p>
+          <p>From modern and minimalistic, to retro and funky, I can create a logo that fits your brand.</p>
         </div>
       </div>
       <div className='section center'>
         <div>
-          <h1>I'm</h1>
-          <h2>Defining</h2>
+          <h2>Interface</h2>
+          <h1>Design</h1>
           <hr />
-          <p>I can redesign your brand that will make it stand out from the competition.</p>
+          <p>Your user's experience using your product is important, and I will make sure it's a good one.</p>
         </div>
       </div>
     </Container>
