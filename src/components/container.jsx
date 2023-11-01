@@ -19,7 +19,7 @@ export default function Container(props) {
     const options = {
       root: null,
       rootMargin: '0px',
-      threshold: 0.5, // Change this threshold as needed
+      threshold: 0.5,
     };
 
     const observer = new IntersectionObserver(handleIntersect, options);

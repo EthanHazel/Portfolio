@@ -5,6 +5,7 @@ export default function Face(props) {
     const faceImageRef = useRef(null);
     const [shadowX, setShadowX] = useState(0);
     const [shadowY, setShadowY] = useState(0);
+    const [blurRadius, setBlurRadius] = useState(3);
 
     useEffect(() => {
         const faceImage = faceImageRef.current;
@@ -19,8 +20,10 @@ export default function Face(props) {
             const offsetX = distance * Math.cos(angle);
             const offsetY = distance * Math.sin(angle);
 
-            setShadowX(offsetX / 50); // Adjust the values as needed
-            setShadowY(offsetY / 50); // Adjust the values as needed
+            setShadowX(offsetX / 50);
+            setShadowY(offsetY / 50);
+
+            setBlurRadius(3 - distance / 75);
         };
 
         const onMouseMove = (e) => {
@@ -42,7 +45,7 @@ export default function Face(props) {
                 ref={faceImageRef}
                 src={props.source}
                 style={{
-                    filter: `drop-shadow(${-shadowX}vh ${-shadowY}vh 3vh var(--background))`,
+                    filter: `drop-shadow(${-shadowX}vh ${-shadowY}vh ${blurRadius}vh #0a0a0a7F)`,
                 }}
             />
             <img className='faceBackground' src='../assets/photo_gradient.png' />
