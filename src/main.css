@@ -33,6 +33,7 @@ h1 {
     font-size: 7vh;
     background-image: url(../assets/gradient.png);
     background-repeat: repeat;
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 900;
@@ -62,7 +63,8 @@ h2 {
     display: inline-block;
 }
 
-p {
+p,
+label {
     font-family: 'Space Grotesk', sans-serif;
     font-size: 2vh;
     font-weight: 400;
@@ -72,9 +74,9 @@ p {
 
 hr {
     border: 0;
-    border-top: 0.2vh solid rgba(255, 255, 255, 0.25);
+    border-top: 0.2vh solid rgba(255, 255, 255, 0.05);
     width: 100%;
-    margin-top: 2vh;
+    margin: none;
 }
 
 .noise {

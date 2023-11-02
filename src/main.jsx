@@ -4,6 +4,7 @@ import Container from './components/container.jsx'
 import Header from './components/header.jsx'
 import Button from './components/button.jsx'
 import Face from './components/face.jsx'
+import Form from './components/form.jsx'
 
 import './main.css'
 
@@ -53,14 +54,21 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Container size='big'>
       <div className='section left'>
         <h2>Hey, let's get in <h1>touch!</h1></h2>
-        <p>For inquiries or collaborations, you can contact me via LinkedIn or email. Whether it's creating logos, websites, or brand identities, I'm here to bring your vision to life.</p>
-        <div className='buttonContainer'>
-          <Button color='red' href='https://www.linkedin.com/in/ethan-hazel/overlay/contact-info/' label='LinkedIn' />
-          <Button color='gray' href='mailto:ethanyvonhazel@gmail.com' label='Email' />
+        <p>If you are interested in working together or have any questions, get in touch and I will respond as soon as I can.</p>
+        <hr />
+        <div className='linkContainer'>
+          <div className='contactLink'>
+            <label htmlFor='email'>E-Mail: </label>
+            <a id='email' href='mailto:ethanyvonhazel@gmail.com'>ethanyvonhazel@gmail.com</a>
+          </div>
+          <div className='contactLink'>
+            <label htmlFor='phone'>Phone: </label>
+            <a id='phone' className='unavailable'>Currently unavailable</a>
+          </div>
         </div>
       </div>
       <div className='section right'>
-        <img src={('./assets/face_two.png')} />
+        <Form />
       </div>
     </Container>
   </React.StrictMode>

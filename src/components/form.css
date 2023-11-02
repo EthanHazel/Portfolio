@@ -1,0 +1,84 @@
+label {
+    display: block;
+}
+
+.button[type='submit'] {
+    width: 100%;
+}
+
+.linkContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.contactLink a {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 2vh;
+    font-weight: 400;
+    color: var(--primary);
+    line-height: 4vh;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.contactLink a:hover {
+    text-decoration: underline;
+}
+
+.contactLink a:active {
+    color: #313131;
+}
+
+.contactLink a.unavailable {
+    cursor: not-allowed;
+    color: #313131;
+    text-decoration: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4vh;
+    width: 100%;
+}
+
+form input {
+    padding: 0 2vh;
+    height: 5vh;
+}
+
+textarea {
+    padding: 2vh;
+    height: 16vh;
+    resize: none;
+}
+
+form input,
+textarea {
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 1vh;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.8vh;
+    font-weight: 50;
+    text-decoration: none;
+    background-color: var(--secondary);
+}
+
+form input::placeholder,
+textarea::placeholder {
+    color: #313131;
+}
+
+form input:hover,
+textarea:hover {
+    background-color: #1d1d1d;
+}
+
+form input:focus,
+textarea:focus {
+    background-color: #1d1d1d;
+    box-shadow: hsla(0, 0%, 100%, 0.25) 0px 0px 0px 5px;
+}

@@ -65,7 +65,7 @@
 .headerLinks a {
     font-family: 'Space Grotesk', sans-serif;
     font-size: 1.5vh;
-    font-weight: 800;
+    font-weight: 500;
     color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
     transition: background-color 0.025s, opacity 0.025s;

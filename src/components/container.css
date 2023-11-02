@@ -60,13 +60,18 @@
 
 .section.right {
     align-items: flex-end;
-    width: calc(45% - 3vh);
+    width: calc(45% - 7vh);
 }
 
 .section.center {
     align-items: center;
     width: 25%;
     padding: 6vh;
+}
+
+.section.center hr {
+    border-top: 0.2vh solid rgba(255, 255, 255, 0.25);
+    margin-top: 2vh;
 }
 
 .section img {
