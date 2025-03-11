@@ -76,6 +76,7 @@ export const metadata = {
       "en-US": "https://ehazel.com/",
     },
   },
+  themeColor: "#000",
 };
 
 export default function RootLayout({ children }) {
