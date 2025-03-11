@@ -27,7 +27,7 @@ export const metadata = {
     siteName: TITLE,
     images: [
       {
-        url: "/images/meta.png",
+        url: "/images/meta.webp",
         width: 1200,
         height: 630,
         alt: TITLE,
@@ -38,7 +38,7 @@ export const metadata = {
     card: "summary_large_image",
     title: TITLE,
     description: DESCRIPTION,
-    images: "/images/meta.png",
+    images: "/images/meta.webp",
     creator: "@EthanHazelGD",
   },
   icons: {
