@@ -1,0 +1,46 @@
+:root {
+  --primary: #fff;
+  --secondary: rgba(255, 255, 255, 0.6);
+  --tertiary: rgba(255, 255, 255, 0.31);
+  --quaternary: rgba(255, 255, 255, 0.13);
+  --background: #000;
+
+  --radius-small: 0.25rem;
+  --radius-medium: 0.5rem;
+  --radius-large: 0.75rem;
+
+  --header-font: "Syne", sans-serif;
+  --body-font: "Inter", sans-serif;
+}
+
+@font-face {
+  font-family: "Syne";
+  src: url("@/fonts/syne.ttf") format("truetype-variations");
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("@/fonts/inter.ttf") format("truetype-variations");
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background);
+  color: var(--primary);
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  font-family: var(--body-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--header-font);
+}

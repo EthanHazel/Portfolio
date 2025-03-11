@@ -1,0 +1,97 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% - 2rem);
+  height: 2rem;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-bottom: 0px solid var(--quaternary);
+  backdrop-filter: blur(0);
+  z-index: 1;
+  transition: border-bottom 0.1s ease-in-out, backdrop-filter 0.1s ease-in-out;
+}
+
+.navbar.scrolled {
+  border-bottom: 1px solid var(--quaternary);
+  backdrop-filter: blur(2rem);
+}
+
+.navbar-margin {
+  height: 4rem;
+}
+
+.navbar-spacer {
+  width: 9rem;
+}
+
+.navbar-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-decoration: none;
+  border-radius: var(--radius-medium);
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+  outline: 0px solid var(--quaternary);
+  transition: background-color 0.05s ease-in-out, outline 0.05s ease-in-out;
+}
+
+.navbar-button svg {
+  color: var(--primary);
+  opacity: 25%;
+}
+
+.navbar-button-text {
+  font-weight: 550;
+  font-size: 0.8rem;
+  color: var(--primary);
+}
+
+@media (hover: hover) {
+  .navbar-button:hover {
+    background-color: var(--quaternary);
+    outline: 1px solid var(--tertiary);
+  }
+}
+
+.navbar-button:active {
+  background-color: var(--tertiary);
+  outline: 1px solid var(--tertiary);
+  transition: background-color 0s ease-in-out, outline 0s ease-in-out;
+}
+
+.navbar-logo {
+  position: fixed;
+  top: 0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: opacity 0.05s ease-in-out;
+}
+
+@media (hover: hover) {
+  .navbar-logo:hover {
+    opacity: 75%;
+  }
+}
+
+.navbar-logo:active {
+  opacity: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar-button-text {
+    display: none;
+  }
+  .navbar-button {
+    padding: 0.5rem;
+  }
+}
