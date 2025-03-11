@@ -15,12 +15,12 @@
 
 @font-face {
   font-family: "Syne";
-  src: url("@/fonts/syne.ttf") format("truetype-variations");
+  src: url("/fonts/syne.ttf") format("truetype-variations");
 }
 
 @font-face {
   font-family: "Inter";
-  src: url("@/fonts/inter.ttf") format("truetype-variations");
+  src: url("/fonts/inter.ttf") format("truetype-variations");
 }
 
 body {
