@@ -88,10 +88,17 @@
 }
 
 @media screen and (max-width: 600px) {
+  .navbar {
+    padding: 2rem;
+    width: calc(100% - 4rem);
+  }
   .navbar-button-text {
     display: none;
   }
   .navbar-button {
     padding: 0.5rem;
+  }
+  .navbar-logo {
+    top: 1.5rem;
   }
 }

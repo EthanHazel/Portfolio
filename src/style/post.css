@@ -50,6 +50,14 @@
   border-radius: var(--radius-medium);
 }
 
+.post-header-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
 .post-content {
   display: flex;
   flex-direction: column;
@@ -60,8 +68,20 @@
 
 @media screen and (max-width: 600px) {
   .post {
-    width: calc(100% - 4rem);
-    padding: 2rem;
+    width: 100%;
+    padding: 0;
     border: none;
+  }
+  .post-header {
+    margin-top: 1rem;
+  }
+  .post-header-image {
+    border-radius: 0;
+  }
+  .post-header-info {
+    padding: 1rem;
+  }
+  .post-content {
+    padding: 2rem;
   }
 }

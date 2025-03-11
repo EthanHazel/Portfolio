@@ -9,7 +9,7 @@ export default function Home() {
     <div>
       <div className="home-header">
         <h2 className="home-header-subtitle">Web Designer & Developer</h2>
-        <h1 className="home-header-title">What's up? I'm Ethan Hazel</h1>
+        <h1 className="home-header-title">I'm Ethan Hazel. What's up?</h1>
         <div>
           <a
             href="/github"

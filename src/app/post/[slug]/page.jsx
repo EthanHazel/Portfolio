@@ -65,11 +65,13 @@ export default async function Page({ params }) {
           height={576}
           className="post-header-image"
         />
-        <h1 className="post-title">{metadata.title}</h1>
-        <p className="post-description">{metadata.description}</p>
-        <span className="post-date">
-          Posted <Date dateString={metadata.creationDate} />
-        </span>
+        <div className="post-header-info">
+          <h1 className="post-title">{metadata.title}</h1>
+          <p className="post-description">{metadata.description}</p>
+          <span className="post-date">
+            Posted <Date dateString={metadata.creationDate} />
+          </span>
+        </div>
       </div>
       <div className="post-content">
         <BlogPost />
