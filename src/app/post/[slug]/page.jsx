@@ -24,7 +24,7 @@ export async function generateMetadata({ params }) {
       siteName: "Ethan Hazel",
       images: [
         {
-          url: `/images/posts/${slug}.webp`,
+          url: `/images/posts/${slug}/main.webp`,
           width: 1200,
           height: 630,
           alt: metadata.title,
@@ -35,7 +35,7 @@ export async function generateMetadata({ params }) {
       card: "summary_large_image",
       title: metadata.title,
       description: metadata.description,
-      images: `/images/posts/${slug}.webp`,
+      images: `/images/posts/${slug}/main.webp`,
       creator: "@EthanHazelGD",
     },
   };
@@ -59,7 +59,7 @@ export default async function Page({ params }) {
     <div className="post">
       <div className="post-header">
         <Image
-          src={`/images/posts/${slug}.webp`}
+          src={`/images/posts/${slug}/main.webp`}
           alt={metadata.title}
           width={1024}
           height={576}

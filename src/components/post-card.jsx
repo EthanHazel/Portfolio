@@ -15,7 +15,7 @@ export default async function PostCard({ slug }) {
   return (
     <Link className="post-card" href={`/post/${slug}`}>
       <Image
-        src={"/images/posts/" + slug + ".webp"}
+        src={"/images/posts/" + slug + "/main.webp"}
         alt={metadata.title}
         width={400}
         height={225}
