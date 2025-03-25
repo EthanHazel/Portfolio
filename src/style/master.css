@@ -11,6 +11,7 @@
 
   --header-font: "Syne", sans-serif;
   --body-font: "Inter", sans-serif;
+  --mono-font: "Red Hat Mono", monospace;
 }
 
 @font-face {
@@ -21,6 +22,11 @@
 @font-face {
   font-family: "Inter";
   src: url("/fonts/inter.ttf") format("truetype-variations");
+}
+
+@font-face {
+  font-family: "Red Hat Mono";
+  src: url("/fonts/redhat.ttf") format("truetype-variations");
 }
 
 body {
@@ -43,4 +49,95 @@ h4,
 h5,
 h6 {
   font-family: var(--header-font);
+}
+
+hr {
+  border-style: solid none none none;
+  border-color: var(--quaternary);
+  border-width: 1px;
+  width: 100%;
+}
+
+blockquote {
+  border-left: 3px solid var(--quaternary);
+  padding-left: 2rem;
+  font-style: italic;
+  color: var(--secondary);
+  margin: 1rem 0;
+}
+
+blockquote p {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+code {
+  font-family: var(--mono-font);
+  font-size: 1rem;
+  display: inline-flex;
+  padding: 0.1rem 1rem;
+  border-radius: var(--radius-small);
+  border: 1px solid var(--quaternary);
+  color: var(--secondary);
+  margin: 0 0.5rem;
+}
+
+pre code {
+  display: block;
+  padding: 2rem;
+  border-radius: var(--radius-medium);
+  border: 1px solid var(--quaternary);
+  color: var(--primary);
+  margin: 1rem 0;
+}
+
+a {
+  color: var(--primary);
+}
+
+@media (hover: hover) {
+  a:hover {
+    color: var(--secondary);
+  }
+}
+
+a:active {
+  color: var(--tertiary);
+}
+
+.big-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-medium);
+  border: 1px solid var(--quaternary);
+  color: var(--secondary);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media (hover: hover) {
+  .big-link:hover {
+    color: var(--primary);
+  }
+}
+
+.big-link:active {
+  color: var(--tertiary);
+}
+
+.big-link svg {
+  margin-right: 1rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  color: var(--primary);
+}
+
+.big-link .big-link-name {
+  margin: 0;
+  font-size: 0.8rem !important;
+  font-style: normal;
 }

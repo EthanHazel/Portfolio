@@ -1,4 +1,4 @@
-export default function Date({ dateString, className }) {
+export default function Date({ dateString = "1/1/1", className }) {
   const splitDate = dateString.split("/");
   const months = [
     "January",

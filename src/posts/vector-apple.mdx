@@ -1,0 +1,114 @@
+import BigLink from "@/components/big-link";
+
+export const metadata = {
+  title: "Modding the Apple 1 To Be Vector Based For Some Reason",
+  description:
+    "I modified an Apple 1 emulator to have an infinite resolution. You can finally run those test commands in 8K.",
+  creationDate: "03/25/25",
+};
+
+# Quick Intro
+
+With this being my first actual post about something I've made, I'm proud to announce that it is something completely useless and stupid. I hacked an emulator of the original Apple 1 computer to use vector graphics instead of bitmap text.
+
+This makes the Apple 1 technically compatible with scaling to any resolution. Your dreams of writing Basic on your 8K monitor with the Apple 1 are now a reality.
+
+# Uh, why?
+
+I've been doing Graphic Design for around 5 years now, and one thing I've never done yet are fonts. I've also been on some retro computing kick recently, probably from binging the 8-bit guy on YouTube.
+
+Recently I got the idea to try making a font in the style of the Commodore 64. I thought because it was pixelated, it would be cool to recreate it inside a vector style.
+
+I ended up finishing it in around an afternoon of working on it. I think it looks decently nice but I think I was too faithful honestly. The main issue for me is the kerning. It's made like a monospace font, because that's how it is on the Commodore 64, but the look only really works when it's pixelated. I might come back to it later and update it if I feel inclined.
+
+![Commodore64](/assets/posts/vector-apple/commadoor.webp)
+
+Later on, I decided to give the Apple 1 a try. The main reason is that the Apple 1 is famous for having a super small set of characters, so it wouldn't take long.
+
+I like the way this font came out much better, as it keeps a consistent width and kerning. It honestly reminds me a bit of the Super Mario Maker font.
+
+![Apple1](/assets/posts/vector-apple/appolone.webp)
+
+I decided to name the fonts App Ol' One and Comma Door. I thought it would be easy to figure out what they were referencing that way.
+
+# The Apiphony
+
+As all good ideas came, I came up with the idea of integrating the font into an emulator at 2 in the morning when I was trying to sleep.
+
+I didn't really think about importing it originally, as I started with the Commodore, and that system has bitmap support, along with having a massive amount of characters. The Apple 1 has no support for anything other than its main characters, so replacing that one set would essentially make the entire system vector-based (the emulated one at least).
+
+Now I'm going to be the first to admit that I am way too stupid to create an Apple 1 emulator from scratch. Even if I could I don't even think I would for a project like this. With the amount of time it would take, I would be better off working on something else.
+
+# The Source
+
+I decided to fork an already existing emulator and add my custom font into it. Finding an emulator to fork was pretty difficult, as the Apple 1 is a pretty niche system.
+
+It took a while but eventually, I found Apple1JS by Stefano Furiosi on GitHub.
+
+It goes without saying that all of the actual hard work for this project was done by the original developer. Without this project, I would have never even gotten remotely close to doing anything.
+
+The main reason I decided to go with this repo is specific, is because it worked off of the web. It would be easier to modify the front end, compared to one built on a lower-level language.
+
+# The Process
+
+It took around a day of work to get the font loaded. The way the repository was set up made it pretty easy. The rendering of the screen was all handled through TypeScript and CSS. I was worried I would have to hack around in the actual emulation layer to get it working.
+
+I also went ahead and decided to give a makeover to the interface as well. The original felt a bit rushed (which is fair, it's the thing that matters the least honestly).
+
+I renamed my version to AppleV1JS, with v being a double meaning of version and vector. I know I'm a genius.
+
+> Side note, I spelled genius as jenious in my first draft. A true jenious indeed
+
+![Apple1Emu](/assets/posts/vector-apple/emulator.webp)
+
+# Conclusion & Links
+
+As a side project, I had fun. I know it's definitely not very useful but I thought it was a cool thing to work on.
+
+If you want to visit the emulator, the source, or the original emulator and source, here's a giant clump of links for you to visit
+
+<BigLink
+  href="https://apple-v1-js.vercel.app/"
+  target="_blank"
+  name="Apple V1 JS"
+/>
+
+<BigLink
+  href="https://github.com/EthanHazel/AppleV1JS"
+  target="_blank"
+  name="Source Code"
+  icon="CodeXml"
+/>
+
+<BigLink href="https://stid.me/" target="_blank" name="Apple 1 JS (Original)" />
+
+<BigLink
+  href="https://github.com/stid/Apple1JS"
+  target="_blank"
+  name="Source Code"
+  icon="CodeXml"
+/>
+
+Lastly, if you liked any of the fonts I made when talking at the start, you can download those too.
+
+<BigLink
+  href="/assets/posts/vector-apple/fonts/Comma Door.otf"
+  target="_blank"
+  name="Comma Door (Commodore 64 font)"
+  icon="Download"
+  download={true}
+/>
+
+<BigLink
+  href="/assets/posts/vector-apple/fonts/App Ol' One.otf"
+  target="_blank"
+  name="App Ol' One (Apple 1)"
+  icon="Download"
+  download={true}
+/>
+
+I don't want to attach a license to any of them because I'm not sure if I fully have the rights to them. They are based on other pre-existing fonts. Just know that I am fine with you using them for whatever you want. Whether it is commercial use or not does not bother me.
+
+Anyway, thanks for reading until the end. Hopefully, this was at least somewhat interesting for you.
+
+**Take care 👋**

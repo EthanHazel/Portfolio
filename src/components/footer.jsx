@@ -13,7 +13,7 @@ export default function Footer() {
         <p>Ethan Hazel © {currentYear}, All Rights Reserved</p>
       </div>
       <Image
-        src="/images/netscani.gif"
+        src="/assets/netscani.gif"
         alt="important badge"
         width={88}
         height={31}
