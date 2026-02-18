@@ -6,15 +6,7 @@
   height: calc(100vh - 4rem);
   padding: 4rem 1rem 1rem 1rem;
   text-align: center;
-  background: linear-gradient(rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0.85) 100%),
-    linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(0, 0, 0, 0) 50%,
-      rgba(0, 0, 0, 1) 100%
-    ),
-    url("/assets/gradient.png");
-  background-size: 100% 100%;
+  background-color: var(--background);
   border-bottom: 1px solid var(--quaternary);
   gap: 3rem;
 }
@@ -45,24 +37,8 @@
 
 .home-header-icon {
   color: var(--primary);
-  opacity: 35%;
-  transition: opacity 0.05s ease-in-out;
   padding: 2rem;
-}
-
-.home-header-icon svg {
-  width: 1.5rem;
-  height: 1.5rem;
-}
-
-@media (hover: hover) {
-  .home-header-icon:hover {
-    opacity: 75%;
-  }
-}
-
-.home-header-icon:active {
-  opacity: 50%;
+  text-decoration: none;
 }
 
 @keyframes bounce {

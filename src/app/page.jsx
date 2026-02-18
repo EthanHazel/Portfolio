@@ -1,4 +1,6 @@
-import { ChevronDown, Github, Twitter, Linkedin } from "lucide-react";
+import { ChevronDown } from "lucide-react";
+import { SiGithub, SiX, SiDiscord } from "@icons-pack/react-simple-icons";
+import IllegalIcon from "@/components/illegal-icon";
 
 import Gallery from "@/components/gallery";
 
@@ -17,7 +19,7 @@ export default function Home() {
             rel="noopener noreferrer"
             className="home-header-icon"
           >
-            <Github size={32} />
+            <SiGithub size={32} />
           </a>
           <a
             href="/twitter"
@@ -25,7 +27,7 @@ export default function Home() {
             rel="noopener noreferrer"
             className="home-header-icon"
           >
-            <Twitter size={32} />
+            <SiX size={32} />
           </a>
           <a
             href="/linkedin"
@@ -33,7 +35,15 @@ export default function Home() {
             rel="noopener noreferrer"
             className="home-header-icon"
           >
-            <Linkedin size={32} />
+            <IllegalIcon size={32} />
+          </a>
+          <a
+            href="/discord"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="home-header-icon"
+          >
+            <SiDiscord size={32} />
           </a>
         </div>
         <ChevronDown size={32} className="home-header-arrow" />

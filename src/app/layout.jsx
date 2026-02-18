@@ -8,7 +8,7 @@ import "@/style/master.css";
 const TITLE = "Ethan Hazel";
 const DESCRIPTION =
   "I'm both a designer and a developer. I can craft your brand's identity with logos and assets, design interfaces for your apps and websites, and bring them to life using the latest technologies. My expertise lies in Next.js, React, React Native, and more. If you need someone to help launch your business from the ground up, I'm your go-to person.";
-const URL = "https://www.ehazel.com";
+const WEB_URL = "https://www.ehazel.com";
 
 export const viewport = {
   themeColor: "black",
@@ -21,10 +21,11 @@ export const viewport = {
 export const metadata = {
   title: TITLE,
   description: DESCRIPTION,
+  metadataBase: new URL(WEB_URL),
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: URL,
+    url: WEB_URL,
     siteName: TITLE,
     images: [
       {
@@ -77,7 +78,6 @@ export const metadata = {
       "en-US": "https://ehazel.com/",
     },
   },
-  themeColor: "#000",
 };
 
 export default function RootLayout({ children }) {

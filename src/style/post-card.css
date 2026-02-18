@@ -6,7 +6,9 @@
   text-decoration: none;
   gap: 0.5rem;
   cursor: pointer;
-  transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+  transition:
+    opacity 0.1s ease-in-out,
+    transform 0.1s ease-in-out;
 }
 
 .post-card-image {
@@ -18,7 +20,8 @@
 
 .post-card-title {
   font-size: 1.25rem;
-  font-weight: bold;
+  font-weight: 500;
+  letter-spacing: -1px; /* Dumb tracking hack */
   margin: 0.5rem 0 0.25rem 0;
   color: var(--primary);
   text-decoration: none;

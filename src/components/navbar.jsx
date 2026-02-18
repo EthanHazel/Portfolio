@@ -37,7 +37,7 @@ export default function NavBar() {
           </Link>
         )}
         <Link href="/" className="navbar-logo">
-          <Logo />
+          <Logo theme="dark" />
         </Link>
         <a href="mailto:contact@ehazel.com" className="navbar-button">
           <Send /> <span className="navbar-button-text">Contact Me</span>

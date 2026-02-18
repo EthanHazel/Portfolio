@@ -23,7 +23,7 @@ export default async function PostCard({ slug }) {
       />
       <h1 className="post-card-title">{metadata.title}</h1>
       <p className="post-card-description">{metadata.description}</p>
-      <Date className="post-card-date" dateString={metadata.creationDate} />
+      {/* <Date className="post-card-date" dateString={metadata.creationDate} /> */}
     </Link>
   );
 }

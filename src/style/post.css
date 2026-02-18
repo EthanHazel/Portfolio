@@ -23,7 +23,7 @@
 
 .post-title {
   font-size: 3rem;
-  font-weight: bold;
+  font-weight: 500;
   margin: 0.5rem 0 0.25rem 0;
   color: var(--primary);
   text-decoration: none;

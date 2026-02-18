@@ -68,9 +68,9 @@ export default async function Page({ params }) {
         <div className="post-header-info">
           <h1 className="post-title">{metadata.title}</h1>
           <p className="post-description">{metadata.description}</p>
-          <span className="post-date">
+          {/*<span className="post-date">
             Posted <Date dateString={metadata.creationDate} />
-          </span>
+          </span>*/}
         </div>
       </div>
       <div className="post-content">
